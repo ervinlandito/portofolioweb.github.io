@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5791b7cc47.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/LandID-logos_white.png"
+            class="logo"
+            width="180"
+            height="130"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Design</p>
+          <h1>Hi, I'm <span>Landito Erfin</span><br /></h1>
+        </div>
+      </div>
+    </div>
+    <!-- -about--- -->
+    <div id="about">
+      <div class="containe">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/User.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-tittle">About Me</h1>
+            <p>
+              Saya Landito Erfin, saya seorang mahasiswa informatika dan seorang
+              front-end web developer. Dengan dua tahun pengalaman, saya
+              menggabungkan keterampilan pengembangan web dengan keahlian desain
+              dalam Canva, Figma, dan Corel Draw. Saya percaya bahwa desain yang
+              kuat adalah kunci untuk menciptakan pengalaman web yang
+              mengesankan. Saya aktif dalam komunitas IT, berbagi pengetahuan
+              melalui artikel dan tutorial di blog pribadi saya. Saya sangat
+              bersemangat tentang kolaborasi dan menciptakan proyek inovatif.
+              Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan,
+              jangan ragu untuk menghubungi saya. Terima kasih!
+            </p>
+
+            <div class="tab-tittles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interface</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>App Development</span><br />Building Android apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023</span><br />workers at the hotel.</li>
+                <li>
+                  <span>2021 - 2022</span><br />member of the information
+                  engineering student association.
+                </li>
+                <li><span>2019</span><br />World English Pare Training.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - Now</span><br />Muhammadiyah University Malang
+                  students.
+                </li>
+                <li>
+                  <span>2018</span><br />Alrifaie Modern High School graduate.
+                </li>
+                <li>
+                  <span>2015</span><br />Insan Kamil Middle School graduate.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------sevice------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Dengan pengalaman sebelumnya dalam desain web, saya memiliki
+              kemampuan untuk menciptakan tampilan yang menarik dan responsif
+              untuk situs web Anda. Saya fokus pada memastikan bahwa desain web
+              tidak hanya estetis, tetapi juga mudah digunakan oleh pengguna.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Pengalaman pengguna (UX) adalah prioritas saya. Saya akan bekerja
+              untuk memastikan bahwa pengguna dapat dengan mudah menavigasi
+              situs web atau aplikasi Anda. Saya akan merancang alur kerja yang
+              intuitif dan memastikan pengalaman pengguna yang lancar.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Selain pengembangan web, saya juga memiliki pengetahuan dalam
+              desain aplikasi. Dengan demikian, saya dapat membantu Anda
+              menciptakan antarmuka yang menarik dan fungsional untuk aplikasi
+              seluler atau desktop Anda. Kemampuan saya dalam desain grafis
+              dengan Canva, Figma, dan Corel Draw juga akan menjadi aset
+              berharga dalam pengembangan desain Anda.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------potofolio---------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Work1.jpg" />
+            <div class="layer">
+              <h3>MakeUp Artist Website</h3>
+              <p>
+                Saya dan tim telah merancang dan mengembangkan situs web untuk
+                seorang makeup artist, yang menyajikan layanan booking makeup
+                dan menampilkan portofolio karyanya. Situs ini memungkinkan
+                pelanggan untuk dengan mudah memilih dan memesan layanan makeup
+                sesuai kebutuhan mereka. Desain responsif dan elemen desain yang
+                menarik memastikan pengalaman pengguna yang luar biasa.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work2.jpg" />
+            <div class="layer">
+              <h3>Tipin Mobile App</h3>
+              <p>
+                Saat ini, saya sedang mengerjakan pengembangan sebuah aplikasi
+                seluler yang memfasilitasi proses ekspor dan impor barang.
+                Aplikasi ini akan membantu pengguna untuk melacak dan mengelola
+                transaksi ekspor dan impor mereka dengan cepat dan efisien. Saya
+                berkomitmen untuk menciptakan antarmuka yang mudah digunakan dan
+                efektif.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Work3.jpg" />
+            <div class="layer">
+              <h3>Canva, Figma dan Coreldraw Design</h3>
+              <p>
+                Selain proyek-proyek web dan aplikasi saya, saya juga memiliki
+                keahlian dalam desain grafis menggunakan berbagai alat seperti
+                Canva, Figma, dan Corel Draw. Kemampuan ini memungkinkan saya
+                untuk menciptakan materi promosi yang menarik, termasuk desain
+                poster, brosur, dan konten media sosial yang mengesankan.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!------Contact------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-tittle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>kaum.ngalam@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>6282115668425</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/ervinland/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/Zeusandito"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://www.instagram.com/ervin_landito213/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/erfin-landito-aa8740268/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Landito Made by
+          <i class="fa-solid fa-heart"></i> Tutorials
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxH_uYAxZ0wgwyGuBsDPX8YriGhy-utCMJBdfGLZImKVsxTLTQ84tQgO9JrSZEx4bYQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Pesan Telah terkirim";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 50000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
